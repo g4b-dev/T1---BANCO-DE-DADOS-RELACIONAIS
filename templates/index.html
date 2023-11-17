@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Funcionário</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Funcionário</h1>
+    <form method="post" action="{{ url_for('formulario') }}">
+        <label for="setor">Setor:</label>
+        <input type="text" id="setor" name="setor" required><br><br>
+
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" name="cargo" required><br><br>
+
+        <label for="idSetor">ID do Setor:</label>
+        <input type="text" id="idSetor" name="idSetor" required><br><br>
+
+        <label for="idCargo">ID do Cargo:</label>
+        <input type="text" id="idCargo" name="idCargo" required><br><br>
+
+        <label for="firstName">Primeiro Nome:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Sobrenome:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="admissionDate">Data de Admissão:</label>
+        <input type="date" id="admissionDate" name="admissionDate" required><br><br>
+
+        <label for="status">Status do Funcionário:</label>
+        <select id="status" name="status" required>
+            <option value="ativo">Ativo</option>
+            <option value="inativo">Inativo</option>
+        </select><br><br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
